@@ -29,6 +29,7 @@
   text-decoration: none;
   padding: 0 10px;
   transition: 0.4s;
+  color: black;
 }
 
 .show-menu-btn,.hide-menu-btn{
