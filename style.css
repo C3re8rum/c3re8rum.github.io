@@ -1,4 +1,12 @@
+* {
+  text-decoration: none;
+  color: black;
+}
 
+
+body {
+  background: #f5f7f8;
+}
   .cards {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -11,33 +19,31 @@
   position: relative;
   color: #1e272e;
   padding-left: 0px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .card img {
   padding: 0px;
   margin: 0px;
   border-radius: 10px;
-  height: 70%;
+  height: 65%;
   width: 100%;
+  align: center;
+  padding-bottom: 5%;
+  background-size: cover;
+  background-position: center center;
 }
 
-.btn2 {
-  display: inline-grid;
-  grid-template-columns: 80px;
-  grid-template-rows: 10px;
-  color: #1e272e;
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 1% 0% 3% 2%;
-  opacity: 0;
+.card-container {
+  padding: 10px 0px;
+  text-align: center;
 }
 
 .card:hover {
   transform: scale(1.1);
   transition: 0.4s;
-}
-.card:hover .btn2 {
-  opacity: 1;
 }
 
 
