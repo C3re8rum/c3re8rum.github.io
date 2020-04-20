@@ -1,18 +1,19 @@
 * {
-  font-family: 'Alegreya Sans', sans-serif;
+
 }
 
 .lGrid {
   display:inline-flex;
-  grid-template-columns: repeat(2, 300px);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   position: absolute;
   padding: 0px;
-  margin-left: -22px;
-  margin-top: -60px;
+  margin-left: -2.5%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  align-self: center;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 img.lgrid {
@@ -32,4 +33,18 @@ h1.lg {
 
 h4.language {
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .lGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+  #sweC {
+    border-left: 0px;
+  }
+  h1.lg{
+    opacity: 0;
+  }
 }

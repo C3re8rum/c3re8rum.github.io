@@ -80,10 +80,13 @@
     line-height: normal;
     transition: 0.7s;
     z-index: 15;
+
   }
   .menu a{
     display: block;
     padding: 20px;
+    color: white;
+    font-weight: lighter;
   }
   .hide-menu-btn{
     position: absolute;

@@ -20,15 +20,15 @@ p {
   margin: 0px 0px 40px 0px;
 }
 
-h1  {
+.content h1  {
   margin-bottom: 50px;
   font-size: 50px;
   font-weight: 500;
   font-family: 'Alegreya SC', serif;
 }
 
-h2 {
-  font-weight: 300; 
+.content h2 {
+  font-weight: 300;
   font-family: 'Alegreya SC', serif;
 }
 
