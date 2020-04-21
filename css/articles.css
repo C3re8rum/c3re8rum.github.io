@@ -60,6 +60,9 @@ p {
   padding-bottom: 50px;
 }
 
+.content a {
+  color: #3498db;
+}
 @media only screen and (max-width: 1200px) {
   .content {
       padding: 8% 8%;

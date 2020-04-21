@@ -1,0 +1,17 @@
+.about img{
+  width: 100%;
+  max-width: 700px;
+}
+
+.about  {
+  padding: 5% 20%;
+  font-size: 20px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+.about a {
+  color: #3498db;
+}
