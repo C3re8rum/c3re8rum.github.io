@@ -22,6 +22,7 @@ body {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 .card img {
@@ -49,21 +50,29 @@ body {
 .card:hover {
   transform: scale(1.1);
   transition: 0.4s;
+  z-index: 2;
 }
 
 .led {
-   grid-area: 1 / 1 / span 1 / span 2;
+   grid-area: 1 / 1 / span 1 / span 3;
+
 }
 
 .bk {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 5;
+  grid-area: 3 / 2 / span 4 / span 3;
 }
 @media only screen and (max-width:1024px) {
   .cards {
     grid-template-columns: repeat(3,1fr);
+
+  }
+  .arT {
+  }
+  .led   {
+    grid-area: auto /  / span 2 / span 2;
+  }
+  .bk {
+    grid-area: auto / 1 / span 1 / span 1;
   }
 }
 
@@ -71,11 +80,17 @@ body {
   .cards {
     grid-template-columns: repeat(2,1fr);
   }
+  .led   {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+  .bk {
+    grid-area: auto / 1 / span 1 / span 1;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .led {
-     grid-area: 1 / 1 / span 1 / span 2;
+     grid-area: 1 / 1 / span 1 / span 1;
   }
   .cards {
     padding: 7%;
