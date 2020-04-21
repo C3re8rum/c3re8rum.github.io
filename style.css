@@ -91,6 +91,10 @@ body {
 @media only screen and (max-width: 600px) {
   .led {
      grid-area: 1 / 1 / span 1 / span 1;
+
+  }
+  .bk {
+    grid-area: 9 / 1 / span 1 / span 1;
   }
   .cards {
     padding: 7%;
