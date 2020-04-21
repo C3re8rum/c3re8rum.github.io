@@ -62,6 +62,15 @@ body {
 .bk {
   grid-area: 3 / 2 / span 4 / span 3;
 }
+#lifi img {
+  height: 40%;
+}
+
+@media only screen and (min-width:1024px;) {
+  #lifi {
+    height:40%;
+  }
+}
 @media only screen and (max-width:1024px) {
   .cards {
     grid-template-columns: repeat(3,1fr);
@@ -74,6 +83,9 @@ body {
   }
   .bk {
     grid-area: 4 / 2 / span 1 / span 2;
+  }
+  #lifi img {
+    height: 65%;
   }
 }
 
