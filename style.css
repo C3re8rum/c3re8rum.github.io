@@ -13,6 +13,7 @@ body {
   grid-auto-rows: auto;
   grid-gap: 2rem;
   padding:50px 100px;
+  z-index: -2200;
 }
 
 .card {
