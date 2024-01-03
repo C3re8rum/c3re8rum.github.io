@@ -26,10 +26,11 @@
     </div>
     <div class="pgrid">
       <div class="profilecard">
-        <div class="front side">
+        <div class="front side" id="Hugo_front_side" onmouseover="showBackSide(Hugo_front_side, Hugo_back_side)">
           <h1 class="plogo"> Hugo Sahlin </h1>
         </div>
-        <div class="back side">
+        <div class="back side" id="Hugo_back_side" onmouseover="showFrontSide(Hugo_front_side, Hugo_back_side)">
+           
         </div>
 
       </div>
@@ -66,4 +67,19 @@
 
       </div>
   </body>
+  <script>
+    function showBackSide(front_id, back_id){
+        var frontSide = document.getElementById(front_id);
+        var backSide = document.getElementById(back_id);
+        frontSide.style_opacity = "0";
+        backSide.style_opacity = "1";
+    }
+    function showFrontSide(front_id, back_id){
+        var frontSide = document.getElementById(front_id);
+        var backSide = document.getElementById(back_id);
+        frontSide.style_opacity = "1";
+        backSide.style_opacity = "0";
+    }
+
+  </script>
 </html>
